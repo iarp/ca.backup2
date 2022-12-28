@@ -1,18 +1,22 @@
 <?xml version='1.0' standalone='yes'?>
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "ca.backup2">
-<!ENTITY author    "Andrew Zawadzki">
-<!ENTITY version   "2022.07.23">
-<!ENTITY md5       "5a0d167433ea9e0331f92c03418d5f0a">
+<!ENTITY author    "IARP">
+<!ENTITY version   "2022.12.27">
+<!ENTITY md5       "1d5db026451fff7505e2ac57a8bb2ace">
 <!ENTITY launch    "Settings/BackupMainV2">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
-<!ENTITY github    "Squidly271/ca.backup2">
+<!ENTITY github    "iarp/ca.backup2">
 <!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/master/plugins/&name;.plg">
 ]>
 
 <PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" icon="shield">
 
 <CHANGES>
+###2022.12.23
+- Disable popup alert reminding user of docker containers stopping and starting during backup execution
+- Disable use of caPluginUpdateCheck for now.
+
 ###2022.07.23
 - Set permissions on backups to be 0777
 
@@ -105,7 +109,8 @@ rm -f $(ls /boot/config/plugins/&name;/&name;*.txz 2>/dev/null &#124; grep -v '&
 The 'source' file.
 -->
 <FILE Name="/boot/config/plugins/&name;/&name;-&version;-x86_64-1.txz" Run="upgradepkg --install-new">
-<URL>https://raw.github.com/&github;/master/archive/&name;-&version;-x86_64-1.txz</URL>
+<!--<URL>https://raw.github.com/&github;/master/archive/&name;-&version;-x86_64-1.txz</URL>-->
+<URL>https://github.com/&github;/releases/download/&version;/&name;-&version;-x86_64-1.txz</URL>
 <MD5>&md5;</MD5>
 </FILE>
 

@@ -43,9 +43,6 @@ function restoreBackup() {
 
 </script>
 
-> <center>For support for this plugin, visit here: <a href="https://forums.lime-technology.com/topic/61211-plugin-ca-appdata-backup-restore-v2/" target="_blank">HERE</a></center>
-> <center><a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7M7CBCVU732XG' target='_blank'><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"></a></center>
-
 <font size='3' color='red'>General Procedure On How To Restore Your Appdata</font>
 
 <list>
@@ -82,11 +79,3 @@ function restoreBackup() {
 
 
 <input type='button' value='Restore' id='restore' onclick='restoreBackup();'><span class='statusLines'></span>
-
-<br><br>
-
-<div class='tabbedOnly'>
-<a style='float:right;cursor:pointer' onclick='showCredits();'>Credits</a><br><br></span>
-<center>For support for this plugin, visit here: <a href="https://forums.lime-technology.com/topic/61211-plugin-ca-appdata-backup-restore-v2/" target="_blank">HERE</a></center>
-
-</div>
