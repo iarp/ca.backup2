@@ -516,7 +516,7 @@ function toggleDockerStop(el) {
 <link type="text/css" rel="stylesheet" href="<?=autov("/plugins/ca.backup2/styles/switchbutton.css")?>">
 <style>
 .unRaidDockerButton { left: 11px; }
-.fileTree{width:305px;max-height:150px;overflow:scroll;position:absolute;z-index:100;display:none;color:initial;}
+.fileTree{width:305px;max-height:150px;overflow:scroll;z-index:100;display:none;color:initial;}
 
 </style>
 <link type="text/css" rel="stylesheet" href="<?autov("/webGui/styles/jquery.filetree.css")?>">
